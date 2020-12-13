@@ -11,6 +11,10 @@ body {
     transition: .3s ease all;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Fonts */
 
 @font-face {
@@ -308,17 +312,17 @@ i.fas.fa-times {
 header {
     width: 100%;
     height: auto;
-    padding: 10vw;
+    padding: 5vw 10vw;
     position: relative;
 }
 
 header h1.titulo {
     position: absolute;
-    top: 200px;
+    top: 150px;
     color: #F5F1EC;
     font-weight: 900;
     margin-top: 100px;
-    margin-left: 5vw;
+    margin-left: 5%;
     font-size: 64px;
     letter-spacing: -1px;
 }
@@ -333,7 +337,7 @@ header .rostro {
 
 header .sobre-mi {
     position: absolute;
-    top: 400px;
+    top: 340px;
     width: 30%;
 }
 
@@ -341,6 +345,7 @@ p.parrafo {
     color: #F5F1EC;
     text-align: justify;
     font-weight: 100;
+    font-size: 15px;
 }
 
 main {
@@ -381,17 +386,17 @@ main h2 {
 }
 
 .img-proyect-1 {
-    background-image: url(../img/2.jpg);
+    background-image: url(../img/1.jpg);
 
 }
 
 .img-proyect-2 {
-    background-image: url(../img/3.jpg);
+    background-image: url(../img/2.jpg);
 
 }
 
 .img-proyect-3 {
-    background-image: url(../img/5.jpg);
+    background-image: url(../img/3.jpg);
 
 }
 
@@ -401,6 +406,15 @@ main h2 {
     line-height: 500px;
     text-shadow: #06090F 5px 5px 5px;
     font-weight: 400;
+}
+
+.trabajo h6 {
+    text-align: right;
+    font-size: 11px;
+    color: #F5F1EC;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
 }
 
 footer {
