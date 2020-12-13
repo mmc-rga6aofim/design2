@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sauce One', sans-serif;
+    background-color: #06090F;
+    transition: .3s ease all;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../fonts/');
+    src: url('../fonts/?#iefix') format('embedded-opentype'),
+        url('../fonts/fonts/OpenSauceOne-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/fonts/OpenSauceOne-ExtraBoldItalic.woff') format('woff'),
+        url('../fonts/fonts/OpenSauceOne-ExtraBoldItalic.ttf') format('truetype'),
+        url('../fonts/fonts/OpenSauceOne-ExtraBoldItalic.svg#OpenSauceOne-ExtraBoldItalic') format('svg');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../fonts/OpenSauceOne-Italic.eot');
+    src: url('../fonts/OpenSauceOne-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSauceOne-Italic.woff2') format('woff2'),
+        url('../fonts/OpenSauceOne-Italic.woff') format('woff'),
+        url('../fonts/OpenSauceOne-Italic.ttf') format('truetype'),
+        url('../fonts/OpenSauceOne-Italic.svg#OpenSauceOne-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../fonts/OpenSauceOne-ExtraBold.eot');
+    src: url('../fonts/OpenSauceOne-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSauceOne-ExtraBold.woff2') format('woff2'),
+        url('../fonts/OpenSauceOne-ExtraBold.woff') format('woff'),
+        url('../fonts/OpenSauceOne-ExtraBold.ttf') format('truetype'),
+        url('../fonts/OpenSauceOne-ExtraBold.svg#OpenSauceOne-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../fonts/OpenSauceOne-Black.eot');
+    src: url('../fonts/OpenSauceOne-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSauceOne-Black.woff2') format('woff2'),
+        url('../fonts/OpenSauceOne-Black.woff') format('woff'),
+        url('../fonts/OpenSauceOne-Black.ttf') format('truetype'),
+        url('../fonts/OpenSauceOne-Black.svg#OpenSauceOne-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../fonts/OpenSauceOne-BoldItalic.eot');
+    src: url('../fonts/OpenSauceOne-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSauceOne-BoldItalic.woff2') format('woff2'),
+        url('../fonts/OpenSauceOne-BoldItalic.woff') format('woff'),
+        url('../fonts/OpenSauceOne-BoldItalic.ttf') format('truetype'),
+        url('../fonts/OpenSauceOne-BoldItalic.svg#OpenSauceOne-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../fonts/OpenSauceOne-Light.eot');
+    src: url('../fonts/OpenSauceOne-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSauceOne-Light.woff2') format('woff2'),
+        url('../fonts/OpenSauceOne-Light.woff') format('woff'),
+        url('../fonts/OpenSauceOne-Light.ttf') format('truetype'),
+        url('../fonts/OpenSauceOne-Light.svg#OpenSauceOne-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../fonts/OpenSauceOne-BlackItalic.eot');
+    src: url('../fonts/OpenSauceOne-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSauceOne-BlackItalic.woff2') format('woff2'),
+        url('../fonts/OpenSauceOne-BlackItalic.woff') format('woff'),
+        url('../fonts/OpenSauceOne-BlackItalic.ttf') format('truetype'),
+        url('../fonts/OpenSauceOne-BlackItalic.svg#OpenSauceOne-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../fonts/OpenSauceOne-Bold.eot');
+    src: url('../fonts/OpenSauceOne-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSauceOne-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSauceOne-Bold.woff') format('woff'),
+        url('../fonts/OpenSauceOne-Bold.ttf') format('truetype'),
+        url('../fonts/OpenSauceOne-Bold.svg#OpenSauceOne-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../fonts/OpenSauceOne-Medium.eot');
+    src: url('../fonts/OpenSauceOne-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSauceOne-Medium.woff2') format('woff2'),
+        url('../fonts/OpenSauceOne-Medium.woff') format('woff'),
+        url('../fonts/OpenSauceOne-Medium.ttf') format('truetype'),
+        url('../fonts/OpenSauceOne-Medium.svg#OpenSauceOne-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../fonts/OpenSauceOne-MediumItalic.eot');
+    src: url('../fonts/OpenSauceOne-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSauceOne-MediumItalic.woff2') format('woff2'),
+        url('../fonts/OpenSauceOne-MediumItalic.woff') format('woff'),
+        url('../fonts/OpenSauceOne-MediumItalic.ttf') format('truetype'),
+        url('../fonts/OpenSauceOne-MediumItalic.svg#OpenSauceOne-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../fonts/OpenSauceOne-SemiBold.eot');
+    src: url('../fonts/OpenSauceOne-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSauceOne-SemiBold.woff2') format('woff2'),
+        url('../fonts/OpenSauceOne-SemiBold.woff') format('woff'),
+        url('../fonts/OpenSauceOne-SemiBold.ttf') format('truetype'),
+        url('../fonts/OpenSauceOne-SemiBold.svg#OpenSauceOne-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../fonts/OpenSauceOne-SemiBoldItalic.eot');
+    src: url('../fonts/OpenSauceOne-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSauceOne-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/OpenSauceOne-SemiBoldItalic.woff') format('woff'),
+        url('../fonts/OpenSauceOne-SemiBoldItalic.ttf') format('truetype'),
+        url('../fonts/OpenSauceOne-SemiBoldItalic.svg#OpenSauceOne-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../fonts/OpenSauceOne-Regular.eot');
+    src: url('../fonts/OpenSauceOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSauceOne-Regular.woff2') format('woff2'),
+        url('../fonts/OpenSauceOne-Regular.woff') format('woff'),
+        url('../fonts/OpenSauceOne-Regular.ttf') format('truetype'),
+        url('../fonts/OpenSauceOne-Regular.svg#OpenSauceOne-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../fonts/OpenSauceOne-LightItalic.eot');
+    src: url('../fonts/OpenSauceOne-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSauceOne-LightItalic.woff2') format('woff2'),
+        url('../fonts/OpenSauceOne-LightItalic.woff') format('woff'),
+        url('../fonts/OpenSauceOne-LightItalic.ttf') format('truetype'),
+        url('../fonts/OpenSauceOne-LightItalic.svg#OpenSauceOne-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/**/
+
+section.cont-general {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+nav {
+    width: 100%;
+    height: 55px;
+    background-color: #06090F;
+    overflow: hidden;
+    padding: 10px 10vw;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    opacity: 0.9;
+    box-shadow: 0 0 10px #000;
+    transition: .3s ease all;
+    -webkit-transition-property: ease all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: blur(20px);
+}
+
+nav .nav-left {
+    width: 20%;
+    height: 15px;
+    float: left;
+    background-image: url(../img/logo2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+}
+
+nav input {
+    display: none;
+    z-index: -100;
+}
+
+nav .resto-nav {
+    width: 70%;
+}
+
+.menu {
+    width: 50%;
+    float: right;
+    line-height: 35px;
+    text-align: right;
+}
+
+.menu a {
+    color: #F5F1EC;
+    text-decoration: none;
+    padding: 0;
+    padding-left: 15px;
+    transition: all 0.4s;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.4s;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.menu a:hover {
+    color: #28293D;
+}
+
+.mostrar-menu-btn,
+.esconder-menu-btn {
+    transition: 0.4s;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.4s;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    color: #F5F1EC;
+}
+
+.esconder-menu-btn {
+    color: #F5F1EC;
+}
+
+i.fas.fa-times {
+    margin-right: 5vw;
+}
+
+.mostrar-menu-btn {
+    float: right;
+}
+
+
+.mostrar-menu-btn i {
+    line-height: 40px;
+}
+
+.mostrar-menu-btn:hover,
+.esconder-menu-btn:hover {
+    color: #325FE4;
+}
+
+#chk {
+    position: absolute;
+    z-index: -100;
+    background-color: #043264;
+    border-radius: 50%;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 10vw;
+    position: relative;
+}
+
+header h1.titulo {
+    position: absolute;
+    top: 200px;
+    color: #F5F1EC;
+    font-weight: 900;
+    margin-top: 100px;
+    margin-left: 5vw;
+    font-size: 64px;
+    letter-spacing: -1px;
+}
+
+header .rostro {
+    width: 45%;
+    z-index: -1;
+    display: block;
+    margin: auto;
+    border-radius: 7px;
+}
+
+header .sobre-mi {
+    position: absolute;
+    top: 400px;
+    width: 30%;
+}
+
+p.parrafo {
+    color: #F5F1EC;
+    text-align: justify;
+    font-weight: 100;
+}
+
+main {
+    padding: 5vw;
+}
+
+main h2 {
+    color: #F5F1EC;
+    font-weight: 100;
+    font-size: 48px;
+    letter-spacing: -1px;
+}
+
+.proyectos {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.proyecto {
+    width: 31%;
+    height: 500px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.img-proyect-1,
+.img-proyect-2,
+.img-proyect-3 {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 7px;
+}
+
+.img-proyect-1 {
+    background-image: url(../img/2.jpg);
+
+}
+
+.img-proyect-2 {
+    background-image: url(../img/3.jpg);
+
+}
+
+.img-proyect-3 {
+    background-image: url(../img/5.jpg);
+
+}
+
+.proyectos h3.titulo-proyect {
+    text-decoration: none;
+    color: #F5F1EC;
+    line-height: 500px;
+    text-shadow: #06090F 5px 5px 5px;
+    font-weight: 400;
+}
+
+footer {
+    padding: 5vw 10vw;
+    margin-bottom: 10vw;
+}
+
+footer h3 {
+    font-size: 48px;
+    font-weight: 100;
+    color: #F5F1EC;
+    margin-bottom: 10px;
+}
+
+.footer-left {
+    width: 50%;
+    float: left;
+}
+
+.footer-left h6 {
+    color: #F5F1EC;
+    margin-top: 50px;
+}
+
+.footer-right {
+    width: 50%;
+    float: right;
+    text-align: right;
+    margin-top: 50px;
+}
+
+.footer-right i {
+    font-size: 15px;
+    color: #F5F1EC;
+    transition: color 0.5s;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: 0.5s;
+}
+
+.footer-right i:hover {
+    color: #F5F1EC;
+    text-shadow: 1px 1px 1px #F5F1EC;
+}
+
+.footer-right a {
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 900px) {
+    /* Responsive Nav */
+
+    .mostrar-menu-btn,
+    .esconder-menu-btn {
+        display: block;
+        float: right;
+    }
+
+    nav {
+        padding: 25px 10vw;
+        height: 70px;
+        z-index: 1000;
+    }
+
+    nav .header-left {
+        width: 50%;
+        height: 30px;
+        margin: 0;
+    }
+
+    .menu {
+        position: fixed;
+        width: auto;
+        height: auto;
+        background: #000;
+        right: -100%;
+        top: 0;
+        text-align: left;
+        padding: 80px 10vw;
+        padding-bottom: 30px;
+        line-height: normal;
+        transition: 0.5s;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 0.5s;
+        font-size: 25px;
+        z-index: 100000;
+        border-bottom-left-radius: 10px;
+    }
+
+    .mostrar-menu-btn i {
+        color: #000;
+        line-height: 25px;
+    }
+
+    .menu a {
+        display: block;
+        padding: 20px;
+        padding-right: 0;
+        color: #F5F1EC;
+        text-align: right;
+        font-size: 15px;
+    }
+
+    .menu a:hover,
+    .mostrar-menu-btn:hover,
+    .esconder-menu-btn:hover {
+        color: #28293D;
+    }
+
+
+    .esconder-menu-btn {
+        color: #F5F1EC;
+        position: absolute;
+        line-height: 100px;
+        top: 0;
+        right: 7vw;
+    }
+
+    #chk:checked~.menu {
+        right: 0;
+    }
+}
