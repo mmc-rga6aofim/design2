@@ -222,7 +222,7 @@ nav {
     -webkit-transition-property: ease all;
     -webkit-transition-duration: 0.3s;
     -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: blur(20px);
+    backdrop-filter: saturate(180%) blur(50px);
 }
 
 nav .nav-left {
@@ -250,6 +250,8 @@ nav .resto-nav {
     float: right;
     line-height: 35px;
     text-align: right;
+    z-index: 2000;
+    opacity: 1;
 }
 
 .menu a {
@@ -266,7 +268,7 @@ nav .resto-nav {
 }
 
 .menu a:hover {
-    color: #28293D;
+    color: #FF7C7B;
 }
 
 .mostrar-menu-btn,
@@ -299,13 +301,13 @@ i.fas.fa-times {
 
 .mostrar-menu-btn:hover,
 .esconder-menu-btn:hover {
-    color: #325FE4;
+    color: #FF7C7B;
 }
 
 #chk {
     position: absolute;
     z-index: -100;
-    background-color: #043264;
+    background-color: #FF7C7B;
     border-radius: 50%;
 }
 
@@ -325,6 +327,7 @@ header h1.titulo {
     margin-left: 5%;
     font-size: 64px;
     letter-spacing: -1px;
+    line-height: 60px;
 }
 
 header .rostro {
@@ -348,15 +351,13 @@ p.parrafo {
     font-size: 15px;
 }
 
-main {
-    padding: 5vw;
-}
-
 main h2 {
     color: #F5F1EC;
     font-weight: 100;
     font-size: 48px;
     letter-spacing: -1px;
+    line-height: 50px;
+    margin-bottom: 20px;
 }
 
 .proyectos {
@@ -370,6 +371,7 @@ main h2 {
 .proyecto {
     width: 31%;
     height: 500px;
+    margin: 0;
     margin-bottom: 2.5%;
     text-align: center;
 }
@@ -427,7 +429,7 @@ main h2 {
     font-weight: 400;
 }
 
-.trabajo h6 {
+h6.boton {
     text-align: right;
     font-size: 11px;
     color: #F5F1EC;
@@ -437,7 +439,7 @@ main h2 {
 }
 
 footer {
-    padding: 5vw 10vw;
+    padding: 10vw 5vw;
     margin-bottom: 10vw;
 }
 
@@ -498,6 +500,8 @@ footer h3 {
         padding: 25px 10vw;
         height: 70px;
         z-index: 1000;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
     }
 
     nav .header-left {
@@ -510,7 +514,7 @@ footer h3 {
         position: fixed;
         width: auto;
         height: auto;
-        background: #000;
+        background: #FF7C7B;
         right: -100%;
         top: 0;
         text-align: left;
@@ -521,13 +525,16 @@ footer h3 {
         -webkit-transition-property: all;
         -webkit-transition-duration: 0.5s;
         font-size: 25px;
-        z-index: 100000;
         border-bottom-left-radius: 10px;
+        box-shadow: 1px 1px 5px #06090F;
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        backdrop-filter: saturate(180%) blur(50px);
     }
 
     .mostrar-menu-btn i {
-        color: #000;
+        color: #F5F1EC;
         line-height: 25px;
+        z-index: 2000;
     }
 
     .menu a {
@@ -537,24 +544,74 @@ footer h3 {
         color: #F5F1EC;
         text-align: right;
         font-size: 15px;
+        z-index: 2000;
     }
 
     .menu a:hover,
     .mostrar-menu-btn:hover,
     .esconder-menu-btn:hover {
-        color: #28293D;
+        color: #06090F;
     }
 
-
     .esconder-menu-btn {
+        display: block;
         color: #F5F1EC;
         position: absolute;
         line-height: 100px;
         top: 0;
-        right: 7vw;
+        right: 5vw;
     }
 
     #chk:checked~.menu {
         right: 0;
+    }
+}
+
+@media (min-width: 0) and (max-width: 700px) {
+    header {
+        height: auto;
+    }
+
+    img.rostro {
+        width: 100%;
+        margin: none;
+    }
+
+    header h1.titulo {
+        top: 130px;
+        left: 10vw;
+        text-shadow: 1px 1px 10px #06090f4f;
+    }
+
+    header div.sobre-mi {
+        width: 70%;
+        margin: 0 5%;
+    }
+
+    .sobre-mi p.parrafo {
+        margin-top: 20px;
+    }
+
+    main {
+        margin: 5vw 10vw;
+    }
+
+    div.proyectos {
+        display: block;
+        margin-top: 50px;
+    }
+
+    div.proyecto {
+        width: 100%;
+        margin-bottom: 7%;
+    }
+
+    footer {
+        margin: 5vw 10vw;
+        margin-bottom: 100px;
+    }
+
+    footer .parrafo {
+        margin-bottom: 50px;
     }
 }
