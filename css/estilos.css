@@ -727,6 +727,10 @@ footer h3 {
         margin-top: 70px;
     }
 
+    div.trabajo {
+        padding: 0;
+    }
+
     div.proyectos {
         display: block;
         margin-top: 50px;
