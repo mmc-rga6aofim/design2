@@ -370,19 +370,23 @@ main h2 {
 .proyecto {
     width: 31%;
     height: 500px;
-    margin-bottom: 5%;
+    margin-bottom: 2.5%;
     text-align: center;
 }
 
 .img-proyect-1,
 .img-proyect-2,
-.img-proyect-3 {
+.img-proyect-3,
+.img-proyect-4,
+.img-proyect-5,
+.img-proyect-6 {
     background-size: cover;
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
     border-radius: 7px;
+    background-position: center;
 }
 
 .img-proyect-1 {
@@ -397,6 +401,21 @@ main h2 {
 
 .img-proyect-3 {
     background-image: url(../img/3.jpg);
+
+}
+
+.img-proyect-4 {
+    background-image: url(../img/4.jpg);
+
+}
+
+.img-proyect-5 {
+    background-image: url(../img/5.jpg);
+
+}
+
+.img-proyect-6 {
+    background-image: url(../img/6.jpg);
 
 }
 
