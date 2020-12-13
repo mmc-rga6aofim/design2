@@ -494,9 +494,21 @@ footer h3 {
 }
 
 .footer-left h6 {
-    color: #F5F1EC;
     margin-top: 50px;
+    text-align: left;
+    font-size: 11px;
+    color: #F5F1EC;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
 }
+
+.footer-left h6:hover {
+    color: #FF7C7B;
+}
+
 
 .footer-right {
     width: 50%;
@@ -641,6 +653,10 @@ footer h3 {
         margin-top: 70px;
     }
 
+    div.trabajo {
+        padding: 0;
+    }
+
     div.proyectos {
         display: block;
         margin-top: 50px;
@@ -656,13 +672,18 @@ footer h3 {
     }
 
     footer {
+        padding: 0;
         margin: 5vw 10vw;
         margin-top: 70px;
-        margin-bottom: 100px;
+        margin-bottom: 10px;
     }
 
     footer h3 {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+    }
+
+    .footer-left {
+        margin-bottom: 50px;
     }
 
     footer .parrafo {
@@ -739,7 +760,7 @@ footer h3 {
     }
 
     header .parrafo {
-    margin-top: 200px;
+        margin-top: 200px;
     }
 
     .trabajo {
