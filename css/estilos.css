@@ -378,7 +378,12 @@ header p.parrafo {
     text-align: left;
 }
 
+.trabajo {
+    padding: 0 5vw;
+}
+
 .trabajo h2 {
+    width: 100%;
     color: #F5F1EC;
     font-weight: 100;
     font-size: 48px;
