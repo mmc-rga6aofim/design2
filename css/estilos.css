@@ -217,7 +217,7 @@ nav {
     top: 0;
     z-index: 100;
     opacity: 0.9;
-    box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #06090F;
     transition: .3s ease all;
     -webkit-transition-property: ease all;
     -webkit-transition-duration: 0.3s;
@@ -384,6 +384,10 @@ header p.parrafo {
     text-align: left;
 }
 
+main {
+    margin-top: 50px;
+}
+
 .trabajo {
     padding: 0 5vw;
 }
@@ -414,12 +418,56 @@ header p.parrafo {
     text-align: center;
 }
 
+.proyecto-largue {
+    width: 98%;
+    height: 500px;
+    margin: 0;
+    margin-bottom: 2.5%;
+    text-align: center;
+    border-radius: 9px;
+    background-image: url(../img/1-1.jpg);
+    background-size: cover;
+    padding: 20px;
+
+}
+
+.proyecto-largue .proyecto {
+    float: left;
+    width: 31%;
+    height: 100%;
+}
+
+.img.proyect-1-1 {
+
+    float: right;
+    background-size: cover;
+    width: 69%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 7px;
+    background-position: center;
+    padding: 30px;
+}
+
+.proyectos h3.titulo-proyect-largue {
+    font-size: 32px;
+    text-align: left;
+    text-decoration: none;
+    color: #4348A4;
+    font-weight: 900;
+    letter-spacing: -1px;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
 .img-proyect-1,
 .img-proyect-2,
 .img-proyect-3,
 .img-proyect-4,
 .img-proyect-5,
-.img-proyect-6 {
+.img-proyect-6,
+.img-proyect-7 {
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -431,32 +479,30 @@ header p.parrafo {
 
 .img-proyect-1 {
     background-image: url(../img/1.jpg);
-
 }
 
 .img-proyect-2 {
     background-image: url(../img/2.jpg);
-
 }
 
 .img-proyect-3 {
     background-image: url(../img/3.jpg);
-
 }
 
 .img-proyect-4 {
     background-image: url(../img/4.jpg);
-
 }
 
 .img-proyect-5 {
     background-image: url(../img/5.jpg);
-
 }
 
 .img-proyect-6 {
     background-image: url(../img/6.jpg);
+}
 
+.img-proyect-7 {
+    background-image: url(../img/7.jpg);
 }
 
 .proyectos h3.titulo-proyect {
@@ -673,6 +719,23 @@ footer h3 {
         margin-top: 50px;
     }
 
+    div.proyecto-largue {
+        width: 100%;
+        height: auto;
+        margin-bottom: 7%;
+    }
+
+    div.proyecto-largue div.proyecto {
+        float: none;
+        width: 100%;
+        height: 500px;
+        margin-bottom: 20px;
+    }
+
+    div.proyecto-largue .img-proyect-1-1 {
+        float: none;
+    }
+
     div.proyecto {
         width: 100%;
         margin-bottom: 7%;
@@ -747,6 +810,23 @@ footer h3 {
         margin-top: 50px;
     }
 
+    div.proyecto-largue {
+        width: 100%;
+        height: auto;
+        margin-bottom: 7%;
+    }
+
+    div.proyecto-largue div.proyecto {
+        float: none;
+        width: 100%;
+        height: 500px;
+        margin-bottom: 20px;
+    }
+
+    div.proyecto-largue .img-proyect-1-1 {
+        float: none;
+    }
+
     div.proyecto {
         width: 100%;
         margin-bottom: 7%;
@@ -785,6 +865,16 @@ footer h3 {
     .trabajo {
         padding: 5vw;
     }
+    
+    div.proyecto-largue .proyecto {
+        width: 31%;
+        float: left;
+    }
+
+    div.img-proyect-1-1 {
+        width: 65%;
+        float: right;
+    }
 
     .proyecto {
         height: 400px;
@@ -796,6 +886,63 @@ footer h3 {
 
     footer {
         margin-bottom: 80px;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1333px) {
+    div.proyecto-largue div.proyecto {
+        width: 31%;
+        float: left;
+    }
+
+    div.proyecto-largue div.img-proyect-1-1 {
+        width: 66%;
+        float: right;
+    }
+}
+
+@media (min-width: 1334px) and (max-width: 1500px) {
+    div.proyecto {
+        height: 600px;
+    }
+
+    div.proyecto-largue {
+        height: 550px;
+    }
+
+    div.proyecto-largue div.img-proyecto {
+        width: 31%;
+        float: left;
+    }
+
+    div.proyecto-largue div.img-proyect-1-1 {
+        width: 67%;
+        float: right;
+    }
+}
+
+@media (min-width: 1501px) and (max-width: 1900px) {
+    div.proyecto-largue div.img-proyecto {
+        width: 31%;
+        float: left;
+    }
+
+    div.proyecto-largue div.img-proyect-1-1 {
+        width: 65%;
+        margin: 20px;
+        float: right;
+    }
+}
+
+@media (min-width: 1901px) and (max-width: 2560px) {
+    div.proyecto-largue div.img-proyecto {
+        width: 31%;
+        float: left;
+    }
+
+    div.proyecto-largue div.img-proyect-1-1 {
+        width: 67%;
+        float: right;
     }
 }
 
