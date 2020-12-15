@@ -234,6 +234,12 @@ nav .nav-left {
     background-repeat: no-repeat;
     margin-top: 12.5px;
     margin-bottom: 12.5px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+nav .nav-left:hover {
+    background-image: url(../img/logo.png);
 }
 
 nav input {
@@ -480,6 +486,10 @@ footer {
     padding: 10vw 5vw;
 }
 
+footer main {
+    margin: 0;
+}
+
 footer h3 {
     font-size: 48px;
     font-weight: 100;
@@ -519,6 +529,7 @@ footer h3 {
 
 .footer-right i {
     font-size: 15px;
+    line-height: 30px;
     color: #F5F1EC;
     transition: color 0.5s;
     -webkit-transition-property: color;
@@ -530,7 +541,7 @@ footer h3 {
 }
 
 .footer-right a {
-    margin-left: 15px;
+    margin: 15px 0px 0px 15px;
     text-decoration: none;
 }
 
@@ -792,4 +803,5 @@ footer h3 {
 
 footer .trabajo {
     padding: 0;
+    height: auto;
 }
